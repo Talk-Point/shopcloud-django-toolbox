@@ -17,7 +17,9 @@ setup_args = dict(
     url='https://github.com/Talk-Point/shopcloud-django-toolbox',
 )
 
-install_requires = []
+install_requires = [
+    'Django>=4'
+]
 
 if __name__ == '__main__':
     setup(**setup_args, install_requires=install_requires)
