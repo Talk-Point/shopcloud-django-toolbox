@@ -18,7 +18,8 @@ setup_args = dict(
 )
 
 install_requires = [
-    'Django>=4'
+    'Django>=4',
+    'djangorestframework>3'
 ]
 
 if __name__ == '__main__':

@@ -4,6 +4,8 @@ import string
 from django.contrib.auth.models import User
 from django.test import TestCase, Client
 from django.urls import reverse
+from rest_framework import status
+from rest_framework.test import APIClient
 
 
 def id_generator(size=6, chars=string.ascii_uppercase + string.digits):
