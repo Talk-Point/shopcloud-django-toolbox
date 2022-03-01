@@ -106,7 +106,7 @@ class BaseTestApiAuthorization(TestCase):
         self._test_superuser_access(endpoint=endpoint)
 
 
-class TestAPIEndpointDoc(TestCase):
+class BaseTestAPIEndpointDoc(TestCase):
     def setUp(self) -> None:
         try:
             self.user = User.objects.create_superuser(
