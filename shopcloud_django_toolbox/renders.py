@@ -18,6 +18,14 @@ class HTMLRenderer(renderers.BaseRenderer):
         return force_str(data, encoding=self.charset)
 
 
+class CSVRenderer(renderers.BaseRenderer):
+    media_type = 'text/csv'
+    format = 'csv'
+
+    def render(self, data, media_type=None, renderer_context=None):
+        return force_str(data, encoding=self.charset)
+
+
 class XMLRenderer(renderers.BaseRenderer):
     media_type = 'application/xml'
     format = 'xml'
