@@ -86,11 +86,11 @@ from shopcloud_django_toolbox import Event
 class FooBarModel(models.Model):
     def do_event(self):
         event = Event(
-            name="de.talk-point.marketplace-suppliers/catalog/products/sync",
+            name="de.talk-point.platform/module/model/sync",
             model=self,
         )
         event.add_task(
-            queue="catalog-erp-sync",
+            queue="queue-name",
             url=f"moduke/api/model/{self.id}/action/",
             json={}
         )
