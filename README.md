@@ -92,7 +92,7 @@ class FooBarModel(models.Model):
 ## deploy
 
 ```sh
-# change version Number in setup.py ändern und dann ...
+# change version Number in setup.py ändern und dann erst releasen
 # delete build and dist-directory
 $ rm -rf build
 $ rm -rf dist
