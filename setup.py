@@ -5,7 +5,7 @@ with open('README.md') as readme_file:
 
 setup_args = dict(
     name='shopcloud_django_toolbox',
-    version='1.4.0',
+    version='1.5.0',
     description='Django tool',
     long_description_content_type="text/markdown",
     long_description=README,

@@ -1,5 +1,6 @@
 import random
 import string
+import uuid
 
 from django.contrib.auth.models import User
 from django.test import TestCase, Client
@@ -10,6 +11,18 @@ from rest_framework.test import APIClient
 
 def id_generator(size=6, chars=string.ascii_uppercase + string.digits):
     return ''.join(random.choice(chars) for _ in range(size))
+
+
+def random_float(min_value: float = 1.0, max_value: float = 1000.0) -> float:
+    return random.uniform(min_value, max_value)
+
+
+def random_int(min_value: int = 1, max_value: int = 1000) -> int:
+    return random.randint(min_value, max_value)
+
+
+def random_str() -> str:
+    return str(uuid.uuid4())
 
 
 class SetupClass(TestCase):
